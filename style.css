@@ -1,10 +1,14 @@
 :root {
-  color-scheme: light;
-  --paper: #f6f2ec;
-  --ink: #29251f;
-  --muted: #82796d;
-  --accent: #bd6848;
-  --line: #ded7cd;
+  color-scheme: dark;
+  --paper: #171815;
+  --ink: #eee8dd;
+  --muted: #aaa398;
+  --accent: #d58a68;
+  --line: #383a34;
+  --surface: #20211d;
+  --subtle: #c0b9ad;
+  --quiet: #89867d;
+  --frame: #46463e;
   --serif: "Noto Serif TC", Georgia, serif;
   --sans: "DM Sans", "Noto Serif TC", sans-serif;
 }
@@ -43,7 +47,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(41, 37, 31, .09);
+  border-bottom: 1px solid rgba(238, 232, 221, .1);
   position: relative;
   z-index: 5;
 }
@@ -82,7 +86,7 @@ a {
   display: flex;
   align-items: center;
   gap: 43px;
-  color: #625a50;
+  color: var(--subtle);
   font-size: 12px;
   letter-spacing: .08em;
 }
@@ -97,7 +101,7 @@ a {
 }
 
 .nav-cta {
-  border: 1px solid #c9bfb2;
+  border: 1px solid var(--line);
   padding: 12px 17px;
   color: var(--ink);
 }
@@ -167,7 +171,7 @@ p {
   gap: 24px;
   margin-top: 25px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #b8aa9b;
+  border-bottom: 1px solid var(--line);
   font-size: 12px;
   letter-spacing: .1em;
   transition: color .2s ease;
@@ -183,7 +187,7 @@ p {
   align-items: center;
   gap: 15px;
   margin-top: 89px;
-  color: #8d8377;
+  color: var(--quiet);
   font-size: 10px;
   letter-spacing: .08em;
 }
@@ -209,7 +213,7 @@ p {
   position: absolute;
   z-index: -1;
   inset: 30px -26px -25px 26px;
-  border: 1px solid #d5cabe;
+  border: 1px solid var(--frame);
 }
 
 .hero-stamp {
@@ -224,7 +228,7 @@ p {
   justify-content: center;
   border-radius: 50%;
   background: var(--paper);
-  color: #75685b;
+  color: var(--subtle);
   font: 12px/1.5 var(--serif);
   letter-spacing: .13em;
   transform: rotate(9deg);
@@ -249,7 +253,7 @@ p {
   position: absolute;
   right: 7.2%;
   bottom: 30px;
-  color: #968b7e;
+  color: var(--quiet);
   font-size: 9px;
   letter-spacing: .16em;
 }
@@ -269,7 +273,7 @@ p {
 
 .section-label {
   align-self: start;
-  color: #8d8377;
+  color: var(--quiet);
   font: 9px var(--sans);
   letter-spacing: .16em;
 }
@@ -320,9 +324,9 @@ h2 em {
   align-items: center;
   justify-content: center;
   gap: 3px;
-  border: 1px solid #cdbfb1;
+  border: 1px solid var(--line);
   border-radius: 50%;
-  color: #665c51;
+  color: var(--subtle);
   font-size: 10px;
   transition: background .2s ease, color .2s ease;
 }
@@ -362,7 +366,7 @@ h2 em {
 
 .gallery-section {
   padding: 104px 0 112px;
-  background: #ede7de;
+  background: var(--surface);
 }
 
 .gallery-heading {
@@ -398,7 +402,7 @@ h2 em {
   border: 0;
   border-bottom: 1px solid transparent;
   background: transparent;
-  color: #8d8377;
+  color: var(--quiet);
   cursor: pointer;
   font: 11px var(--sans);
   letter-spacing: .08em;
@@ -446,13 +450,13 @@ h2 em {
   justify-content: space-between;
   gap: 8px;
   padding-top: 13px;
-  color: #5c534a;
+  color: var(--subtle);
   font: 10px var(--serif);
   letter-spacing: .08em;
 }
 
 .art-card-info span:last-child {
-  color: #9a8f82;
+  color: var(--quiet);
   font: 8px var(--sans);
   letter-spacing: .11em;
 }
@@ -493,7 +497,7 @@ h2 em {
   position: absolute;
   inset: 18px -18px -18px 18px;
   z-index: -1;
-  border: 1px solid #d5cabe;
+  border: 1px solid var(--frame);
 }
 
 .ritual-image-caption {
@@ -519,7 +523,7 @@ h2 em {
   align-items: center;
   gap: 22px;
   padding: 13px 18px;
-  border: 1px solid #cdbfb1;
+  border: 1px solid var(--line);
   font-size: 10px;
   letter-spacing: .1em;
   transition: background .2s ease, color .2s ease;
@@ -539,7 +543,7 @@ h2 em {
   margin-top: 35px;
   padding-left: 15px;
   border-left: 1px solid var(--accent);
-  color: #897e72;
+  color: var(--muted);
   font: 11px/2 var(--serif);
   letter-spacing: .08em;
 }
