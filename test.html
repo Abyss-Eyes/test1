@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6f2ec">
+  <meta name="description" content="一杯咖啡，一朵花的時間。認識咖啡拉花的風味、技巧與日常。">
+  <title>花序・咖啡拉花日常</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Serif+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="花序首頁">
+      <span class="brand-mark" aria-hidden="true">花</span>
+      <span>花序<span class="brand-sub">LATTE & DAILY</span></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="開啟選單" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="site-nav" aria-label="主要導覽">
+      <a href="#story">關於拉花</a>
+      <a href="#gallery">拉花圖鑑</a>
+      <a href="#ritual">日常練習</a>
+      <a class="nav-cta" href="#ritual">開始探索 <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> A LITTLE ART IN EVERY CUP</p>
+        <h1>把一朵花，<br>留在咖啡裡。</h1>
+        <p class="hero-description">拉花，是牛奶與濃縮咖啡相遇的瞬間。<br>也是日常裡，值得慢下來的一小段時間。</p>
+        <a class="text-link" href="#story">走進拉花的世界 <span aria-hidden="true">↓</span></a>
+        <div class="hero-note">
+          <span class="note-number">01</span>
+          <span>從一杯好咖啡，開始練習觀察。</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img class="hero-image" src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="桌上的咖啡與咖啡器具">
+        <div class="hero-stamp" aria-label="慢慢來，花會開">
+          <span>慢慢來</span>
+          <span class="stamp-flower" aria-hidden="true">✳</span>
+          <span>花會開</span>
+        </div>
+        <p class="image-caption">A QUIET MORNING, 9:15 AM</p>
+      </div>
+      <span class="hero-index" aria-hidden="true">01 / 03</span>
+    </section>
+
+    <section class="intro section-wrap" id="story">
+      <div class="section-label"><span>01</span> THE CRAFT</div>
+      <div class="intro-content">
+        <p class="eyebrow">不只是好看而已</p>
+        <h2>一杯咖啡的表情，<br><em>從奶泡開始。</em></h2>
+        <p class="body-copy">當細緻奶泡遇上濃縮咖啡，流動、融合、成形——拉花便在這幾秒鐘裡發生。它沒有標準答案，每一杯都是手感、溫度與當下心情的記錄。</p>
+        <a class="round-link" href="#gallery" aria-label="看拉花圖鑑">看圖鑑 <span aria-hidden="true">↘</span></a>
+      </div>
+      <div class="intro-image-wrap">
+        <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="咖啡師正在製作咖啡">
+        <span class="image-tag">手感・溫度・時間</span>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+      <div class="section-wrap">
+        <div class="gallery-heading">
+          <div>
+            <div class="section-label"><span>02</span> LATTE ART GALLERY</div>
+            <h2>今日的拉花圖鑑</h2>
+          </div>
+          <p>從經典心形到自由流動的葉片，<br>每一道線條，都有自己的節奏。</p>
+        </div>
+        <div class="filter-row" role="group" aria-label="篩選拉花作品">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">全部 <span>06</span></button>
+          <button class="filter-button" type="button" data-filter="classic" aria-pressed="false">經典款</button>
+          <button class="filter-button" type="button" data-filter="nature" aria-pressed="false">自然系</button>
+        </div>
+        <div class="art-grid">
+          <article class="art-card art-card-tall" data-category="classic">
+            <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="表面有細緻奶泡圖案的咖啡" loading="lazy">
+            <div class="art-card-info"><span>01 / 經典心形</span><span>THE HEART</span></div>
+          </article>
+          <article class="art-card" data-category="nature">
+            <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="咖啡杯中的葉片拉花" loading="lazy">
+            <div class="art-card-info"><span>02 / 天鵝湖</span><span>THE SWAN</span></div>
+          </article>
+          <article class="art-card" data-category="classic">
+            <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="咖啡館裡的咖啡時光" loading="lazy">
+            <div class="art-card-info"><span>03 / 一筆鬱金香</span><span>TULIP</span></div>
+          </article>
+          <article class="art-card" data-category="nature">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="午後咖啡與甜點" loading="lazy">
+            <div class="art-card-info"><span>04 / 雲朵日常</span><span>SOFT CLOUD</span></div>
+          </article>
+          <article class="art-card" data-category="classic">
+            <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="咖啡師沖煮咖啡" loading="lazy">
+            <div class="art-card-info"><span>05 / 層層葉脈</span><span>ROSETTA</span></div>
+          </article>
+          <article class="art-card" data-category="nature">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="木桌上的咖啡杯" loading="lazy">
+            <div class="art-card-info"><span>06 / 暖陽花園</span><span>WARM GARDEN</span></div>
+          </article>
+        </div>
+        <p class="gallery-footnote"><span aria-hidden="true">✳</span> 每一杯都不一樣，這正是它迷人的地方。</p>
+      </div>
+    </section>
+
+    <section class="ritual section-wrap" id="ritual">
+      <div class="ritual-image">
+        <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&amp;fit=crop&amp;w=1100&amp;q=85" alt="暖光下準備咖啡的桌面" loading="lazy">
+        <span class="ritual-image-caption">TAKE YOUR TIME</span>
+      </div>
+      <div class="ritual-copy">
+        <div class="section-label"><span>03</span> YOUR DAILY RITUAL</div>
+        <p class="eyebrow">不用急著完美</p>
+        <h2>先沖一杯，<br>再慢慢練習。</h2>
+        <p class="body-copy">好的拉花，從理解咖啡開始。留意奶泡的光澤、奶缸的角度，還有注入時的速度。每一次練習，都是下一杯更好的開始。</p>
+        <a class="button-link" href="#home">回到這杯咖啡 <span aria-hidden="true">↑</span></a>
+        <div class="ritual-quote">「練習的不是圖案，<br>而是如何好好感受每一杯。」</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home">
+      <span class="brand-mark" aria-hidden="true">花</span>
+      <span>花序<span class="brand-sub">LATTE & DAILY</span></span>
+    </a>
+    <p>把平凡的日子，沖得香一點。</p>
+    <span class="copyright">© 2025 花序 LATTE & DAILY</span>
+  </footer>
+</body>
+</html>
