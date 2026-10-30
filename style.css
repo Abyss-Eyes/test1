@@ -1,14 +1,14 @@
 :root {
   color-scheme: dark;
-  --paper: #171815;
-  --ink: #eee8dd;
-  --muted: #aaa398;
-  --accent: #d58a68;
-  --line: #383a34;
-  --surface: #20211d;
-  --subtle: #c0b9ad;
-  --quiet: #89867d;
-  --frame: #46463e;
+  --paper: #241812;
+  --ink: #f2e7d8;
+  --muted: #bba995;
+  --accent: #d49a62;
+  --line: #594235;
+  --surface: #302117;
+  --subtle: #dfcbb5;
+  --quiet: #a8927a;
+  --frame: #654b38;
   --serif: "Noto Serif TC", Georgia, serif;
   --sans: "DM Sans", "Noto Serif TC", sans-serif;
 }
